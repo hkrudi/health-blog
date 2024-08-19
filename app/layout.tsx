@@ -25,7 +25,6 @@ const space_grotesk = Montserrat({
   variable: '--font-space-grotesk',
 })
 
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
