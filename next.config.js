@@ -96,5 +96,18 @@ module.exports = () => {
 
       return config
     },
+    async headers() {
+      return [
+        {
+          source: '/:all*(svg|jpg|png|css|js)', // Adjust file types if needed
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'public, max-age=31536000, immutable', // Cache for 1 year
+            },
+          ],
+        },
+      ];
+    },
   })
 }
