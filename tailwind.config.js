@@ -25,7 +25,7 @@ module.exports = {
         sans: ['var(--font-space-grotesk)', ...fontFamily.mono],
       },
       colors: {
-        primary: colors.green,
+        primary: colors.emerald,
         gray: colors.gray,
       },
       typography: ({ theme }) => ({

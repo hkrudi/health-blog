@@ -80,6 +80,7 @@ const ThemeSwitch = () => {
                         className={`${
                           active ? 'bg-primary-600 text-white' : ''
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        aria-label="dark mode switcher"
                       >
                         <div className="mr-2">
                           <Sun />
@@ -96,6 +97,7 @@ const ThemeSwitch = () => {
                         className={`${
                           active ? 'bg-primary-600 text-white' : ''
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        aria-label="dark mode switcher"
                       >
                         <div className="mr-2">
                           <Moon />
@@ -112,6 +114,7 @@ const ThemeSwitch = () => {
                         className={`${
                           active ? 'bg-primary-600 text-white' : ''
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        aria-label="dark mode switcher"
                       >
                         <div className="mr-2">
                           <Monitor />
