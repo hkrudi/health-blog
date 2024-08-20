@@ -1,5 +1,14 @@
+import siteMetadata from '@/data/siteMetadata'
 
 export default function HeadLink() {
+    const schemaData = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": `%s | ${siteMetadata.title}`,
+        "url": `%s | ${siteMetadata.siteUrl}`,
+        "description": `%s | ${siteMetadata.description}`
+    };
+
     return (
         <>
         <link
@@ -53,6 +62,10 @@ export default function HeadLink() {
                 })(window,document,'script','dataLayer','GTM-KC9GFRJ5');
             `,
             }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
         </>
     );
