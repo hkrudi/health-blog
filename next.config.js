@@ -11,7 +11,6 @@ const ContentSecurityPolicy = `
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src *.s3.amazonaws.com;
-  connect-src *;
   connect-src * https://www.googletagmanager.com;
   font-src 'self';
   frame-src giscus.app
