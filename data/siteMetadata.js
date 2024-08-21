@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Bregaswaras - Kesehatan Lokal',
+  title: 'Bregaswaras - Catatan Lokal Perihal Kesehatan dan Obat Herbal',
   author: '@wowothk',
   headerTitle: 'Bregaswaras',
   description: 'Catatan lokal perihal obat dan kesehatan herbal yang berkembang di masyarakat. Bregaswaras biasa diucapkan sehari-hari di lingkungan masyarakat sebagai ungkapan yang menunjukkan kesehatan dan kebugaran. Sehat yang dimaksud tidak hanya jasmani tetapi juga rohani. Catatan ini hanya bagian dari upaya untuk menjaga kesehatan kita masing-masing.',
