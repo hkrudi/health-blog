@@ -1,13 +1,39 @@
 import siteMetadata from '@/data/siteMetadata'
 
 export default function HeadLink() {
-    const schemaData = {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": `%s | ${siteMetadata.title}`,
-        "url": `%s | ${siteMetadata.siteUrl}`,
-        "description": `%s | ${siteMetadata.description}`
-    };
+    const schemaData = [
+        {
+          "@context": "https://schema.org",
+          "@type": "Website",
+          "name": `${siteMetadata.title}`,
+          "url": `${siteMetadata.siteUrl}`,
+          "description": `${siteMetadata.description}`,
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": `${siteMetadata.siteUrl}`
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": `${siteMetadata.siteUrl}/blog`
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "About",
+              "item": `${siteMetadata.siteUrl}/about`
+            }
+          ]
+        }
+      ];      
 
     return (
         <>
@@ -19,9 +45,9 @@ export default function HeadLink() {
         />
         <link
             rel="icon"
-            type="image/png"
+            type="image/ico"
             sizes="32x32"
-            href={`${process.env.BASE_PATH}/static/images/Subtract.png`}
+            href={`${process.env.BASE_PATH}/static/favicons/Subtract.ico`}
             // href="/static/images/Subtract.png"
         />
         <link
