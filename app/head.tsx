@@ -32,6 +32,26 @@ export default function HeadLink() {
               "item": `${siteMetadata.siteUrl}/about`
             }
           ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": `${siteMetadata.title}`,
+          "url": `${siteMetadata.siteUrl}`,
+          "description": `${siteMetadata.description}`,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Beran, Gandekan, Guwosari, Kec. Pajangan",
+            "addressLocality": "Bantul",
+            "addressRegion": "Daerah Istimewa Yogyakarta",
+            "postalCode": "55751",
+            "addressCountry": "ID"
+          },
+          "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "-7.871050400080267", // Replace with your latitude ,
+              "longitude": "110.32007142906346" // Replace with your longitude
+          }
         }
       ];      
 
